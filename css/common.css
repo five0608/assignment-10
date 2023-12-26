@@ -1,0 +1,289 @@
+@charset "utf-8";
+html,body{
+    background-color: #fff;
+    color: #333;
+    font-family: "맑은고딕";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a{
+    text-align: none;
+    color: black;
+}
+
+a:hover{
+    color: #666;
+}
+
+img{
+    vertical-align: middle;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+    display:flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+header{
+    width: 20%;
+    max-width: 200px;
+    height: 650px;
+    background-color: beige;
+    /* border: 1px solid black; */
+}
+
+h1{
+    width: 100%;
+}
+
+h1 img{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main>a{
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #e333;
+}
+
+.main:last-child>a{
+    border-bottom-style:solid;
+}
+
+.main:hover>a{
+    background-color:orchid;
+    color:white;
+}
+
+.drop{
+    width:100%;
+    display: none;
+}
+
+.drop a{
+    display:block;
+    color: #000000;
+    font-size: 16px;
+    padding:10px;
+}
+
+.drop a:hover{
+    background-color:black;
+    color:white;
+}
+
+.section-footer{
+    width: 80%;
+    max-width: 800px;
+    height: 650px;
+}
+
+section{
+    width: 100%;
+}
+
+.slider-wrap{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.sliders{
+    position: relative;
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    position: relative;
+    width: 33.3%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.slide p{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.n-g-d{
+    width: 800px;
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.notic,
+.gallery,
+.direct{
+    width: 33.3%;
+    height: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.n-g-d h3{
+    width: 30%;
+    padding: 8px 10px;
+    background-color: #e333;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.n-g-d h3:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.n-g-d ul{
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 13.5px;
+    font-weight: bold;
+    line-height: 271%;
+}
+
+.notic li:nth-child(even){
+    background-color: #e333;
+}
+
+.notic li span{
+    float: right;
+}
+
+.gallery>ul,
+.gallery>ul>li>a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery img{
+    width: 90%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.direct{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/direct.jpg") center center;
+}
+
+.direct a{
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+}
+
+footer{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    background: white;
+    box-sizing: border-box;
+    padding:0 20px;
+}
+
+.f-logo,
+.copy,
+.family{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    border: 2px solid #ddd;
+    display: none;
+}
+
+.modal-body{
+    width: 50%;
+    max-width: 600px;
+    height: 50%;
+    max-height: 400px;
+    background-color: #eee;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding-top: 5px;
+}
+
+.modal-body h2{
+    background-color: #e333;
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.modal-content{
+    padding: 10px;
+    text-align: justify;
+    line-height: 200%;
+}
+
+.modal-close{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
